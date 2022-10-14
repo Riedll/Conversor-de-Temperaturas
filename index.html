@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperaturas diversas</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <div class="h1Titulo">
+        <h1>Conversor de temperaturas básico.
+            <br>
+            Suporta: Celcius (°C), Farenheit (°F), Kelvin (K) e Rankine (°Ra) 
+        </h1>
+    </div>
+
+    <div class="divForm">
+        <form>
+            <input type="number" name="temperaturaInserida" id="temperaturaInserida" placeholder="N. de temperatura" required>
+            <select name="unidadeEscolhida" id="unidadeEscolhida">
+
+                <option value="0">Celcius (°C)</option>
+
+                <option value="1">Farenheit (°F)</option>
+
+                <option value="2">Kelvin (K)</option>
+
+                <option value="3">Rankine (°Ra)</option>
+
+            </select>
+            <input type="submit" name="Calcular" id="botão">
+        </form>
+    </div>
+
+    <div id="contasGraus">
+        <p> Resultados: </p>
+
+        <p id="grausCelcius"></p>
+        <br>
+
+        <p id="grausFarenheit"></p>
+        <br>
+
+        <p id="grausKelvin"></p>
+        <br>
+
+        <p id="grausRankine"></p>
+    </div>
+
+</body>
+<script src="./script/script.js"></script>
+</html>
